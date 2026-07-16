@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+h1, p, b{
+    margin:0;
+}
+
+body{
+    background-color:white;
+    height:100vh;
+    width:100%;
+}
+
+h1{
+    font-weight:800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    margin: 0px 50px 0px 50px;   /* 200px hata diya */
+    letter-spacing: 2px;
+}
+
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Regular weight */
+    font-size: 0.95rem;
+    line-height: 1.6; /* Adds comfortable spacing between text lines */
+    color: #333333;   /* Slightly lighter than pure black for readability */
+    max-width: 320px; /* Limits paragraph width to match the layout snippet */
+    /* margin:200px 50px 0px 50px; */
+    margin-left:50px;
+    margin-bottom:20px;
+}
+
+b{
+    font-weight: 700; /* Bold weight */
+    font-size:20px;
+}
+
+
+.container{
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    /* margin:0px; */
+    padding:15px;
+    border-radius:65px;
+    /* border-radius: 100px; */
+}
+
+.left-panel{
+    width:60%;
+    background-color: #FFCC02;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.pikachu-gen {
+    display: block;              /* yeh add karo, span ko block banane ke liye */
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 200px 50px 8px 50px; /* top margin yahan shift kar diya */
+    color: #111;
+}
+
+.pikachu-logo{
+    position:absolute;
+    width:200px;
+    height:60px;
+    top:35px;
+    left:50px;
+    max-width: calc(100% - 50px);
+    
+}
+
+.pikachu-icon{
+    position:absolute;
+    width:300px;
+    height:250px;
+    bottom:-80px;
+    left:0px;
+    opacity:0.1;
+
+}
+.right-panel{
+    width:40%;
+    background-color: #F7E7C4;
+}
+
+.pikachu-image{
+    position:absolute;
+    width:750px;
+    height:670px;
+    top:50px;
+    /* left:350px; */
+    right:100px;
+}
+
+.hamsburger-icon{
+    position:absolute;
+    width:30px;
+    height:30px;
+    top:50px;
+    right:50px;
+}
+
+
+.dot-nav{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 10;
+}
+
+.dot{
+    display:inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    /* position:absolute; */
+}
+
+.dot.active{
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+}
