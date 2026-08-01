@@ -150,6 +150,7 @@ button{
     gap:24px;
     padding:20px 40px;
     background:transparent;
+    /* width:80%/; */
 }
 
 #product1 .pro{

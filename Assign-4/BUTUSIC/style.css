@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+/* div class="image-hm"></div>
+        <div class="text">
+            
+        </div>
+        <div class="logo-circle"></div>
+        <div class="address"></div>
+        <div class="batch"></div>
+        <div class="app-links"></div>
+        <div class="options"></div>
+        <div class="rating"></div>
+        <div class="stock"></div>
+        <div class="image"></div> */
+
+
+main{
+    height:100%;
+    width:100%;
+    background-color: black;
+    display:grid;
+    grid-template-columns:20% 25% 25% 30%;
+    grid-template-rows:1fr 1fr 1fr 1fr; 
+}
+
+.image-hm{
+    /* height:160px; */
+    grid-column-start:1;
+    background-color: aquamarine;
+}
+
+.text{
+    /* height:160px; */
+    grid-row: 2/4;
+    background-color: #b63939;
+}
+.logo-circle{
+    /* height:160px; */
+    
+    background-color: blue;
+}
+
+.address{
+    /* height:160px; */
+    background-color: #fff;
+}
+
+
+.batch{
+    /* height:160px; */
+    grid-template-columns: 15%;
+    
+    background-color: #174a65;
+}
+.app-links{
+    /* height:160px; */
+    background-color: #32bc34;
+}
+
+.options{
+    /* height:160px; */
+    background-color: #663636;
+}
+.rating{
+    /* height:160px; */
+    background-color: #3c6e3b;
+}
+.stock{
+    /* height:160px; */
+    background-color: #47598c;
+}
+.image{
+    /* height:160px; */
+    background-color: #2c1111;
+}
