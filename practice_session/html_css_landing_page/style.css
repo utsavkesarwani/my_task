@@ -1,4 +1,4 @@
-*{
+*{ 
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -83,5 +83,96 @@ nav .header{
 .hero-div{
     width:100%;
     height:calc(100% - 60px);
-    background-color: yellow;
+    background-color: rgb(238,238,238,0.662);
+    border-radius: 20px;
+    display:flex;
+    overflow:hidden;
+    padding:15px 30px ;
 }
+
+.hero-div .left{
+    width:50%;
+    height: 100%;
+    /* background: crimson; */
+
+}
+
+.left h1{
+    font-size:70px;
+    margin-top:20px;
+}
+
+.left p{
+    font-size:15px;
+    opacity:0.8;
+    margin-top:20px;
+}
+
+.left .btn{
+    margin-top:20px;
+}
+
+.left .btn button{
+    padding:15px 30px;
+    border-radius:50px;
+    font-size:15px;
+
+}
+
+.btn button:nth-child(1){
+    background-color: #dadada;
+}
+
+.btn #arrow-left{
+    width:25px;
+    height:25px;
+    /* background-color: white; */
+    border-radius: 50%;
+}
+
+.left .rating{
+    padding:10px 30px ;
+    display:flex;
+    background-color: #fff;
+    width:fit-content;
+    flex-wrap:wrap;
+    border-radius: 50px;
+    gap:10px;
+    align-items:center;
+}
+
+.rating i{
+    font-size:15px;
+}
+
+.rating-text h3{
+    font-size:16px;
+
+}
+
+.rating-text span{
+    font-size: 14px;
+    opacity:0.4;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.left .logos img{
+    height:100px;
+}
+
+.hero-div .right{
+    width: 50%;
+    height:100%;
+    background:aqua;
+}
+
+
+.left h3{
+    margin-top:7px; 
+}
+
+
